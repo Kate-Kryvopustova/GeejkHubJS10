@@ -63,11 +63,12 @@ function sumNumbers(arrayToCheck) {
   
   for (let i = 0; i < arrayToCheck.length; i++) {
 
-    if(isNaN(arrayToCheck[i]) || typeof arrayToCheck[i] === 'undefined' ) {
+    if(isNaN(arrayToCheck[i])) {
       continue;
+    } else if (typeof arrayToCheck[i] === 'number'){
+      sumValue += arrayToCheck[i];
     }
-    
-    sumValue += arrayToCheck[i];
+
   }
   
   return sumValue;
