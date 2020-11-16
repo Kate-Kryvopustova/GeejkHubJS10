@@ -62,7 +62,11 @@ function sumNumbers(arrayToCheck) {
   let sumValue = 0;
   
   for (let i = 0; i < arrayToCheck.length; i++) {
-  if(isNaN(arrayToCheck[i]) || typeof arrayToCheck[i] === 'undefined' ) continue;
+
+    if(isNaN(arrayToCheck[i]) || typeof arrayToCheck[i] === 'undefined' ) {
+      continue;
+    }
+    
     sumValue += arrayToCheck[i];
   }
   
